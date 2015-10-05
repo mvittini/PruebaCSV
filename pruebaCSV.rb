@@ -4,10 +4,10 @@
 
 require 'csv'
 require_relative 'pelicula'
-# require_relative 'generoForeing'
+require_relative 'generoForeing'
 require_relative 'generoDrama'
-# require_relative 'generoAnimation'
-# require_relative 'generoAction'
+require_relative 'generoAnimation'
+require_relative 'generoAction'
 
 dvdList = []
 csv = CSV.open('dvd_csv_2.csv', headers: true, header_converters: :symbol, converters: :numeric )
@@ -19,4 +19,4 @@ dvdList.each do |data|
 
 end
 
-  puts peli
+ puts peli

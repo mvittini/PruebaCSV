@@ -1,7 +1,8 @@
 require './pelicula.rb'
 class Drama < Pelicula
-
-	def initialize
-
+	GENRE = 'Drama'
+	def initialize (data = {}) 
+		super
+		@genre = GENRE	
 	end
 end

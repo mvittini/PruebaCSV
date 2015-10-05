@@ -1,7 +1,8 @@
 require './pelicula.rb'
 class Foreing < Pelicula
-
-	def initialize
-
+	GENRE = 'Foreing'
+	def initialize (data = {}) 
+		super
+		@genre = GENRE
 	end
 end

@@ -1,6 +1,9 @@
 require './pelicula.rb'
 class Action < Pelicula
 
-	def initialize
+	GENRE = 'Action'
+	def initialize (data = {}) 
+		super
+		@genre = GENRE
 	end
 end

@@ -1,7 +1,7 @@
-#5 perros que cuando esten cerca de una persona y un zombie el perro mata el zombie
+
 class Pelicula
 
-	attr_accessor :dvd_title, :studio, :released, :status, :sound, :versions, :price, :rating, :year, :genre, :aspect, :upc, :dvd_releaseDate, :id, :timestamp
+	attr_accessor :dvd_title, :studio, :released, :status, :sound, :versions, :price, :rating, :year, :aspect, :upc, :dvd_releasedate, :id, :timestamp
 	def initialize(data= {}) 
 		@dvd_title = data[:dvd_title]
 		@studio = data[:studio]
@@ -12,10 +12,9 @@ class Pelicula
 		@price = data[:price]
 		@rating = data[:rating]
 		@year = data[:year]
-		@genre = data[:genre]
 		@aspect = data[:aspect]
 		@upc = data[:upc]
-		@dvd_releaseDate = data[:dvd_releaseDate]
+		@dvd_releasedate = data[:dvd_releaseate]
 		@id = data[:id]
 		@timestamp = data[:timestamp]
 	end
